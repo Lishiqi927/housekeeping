@@ -21,6 +21,7 @@ public class UserController {
 	@RequestMapping("/userList")
 	public List<User> getAllUsers(){
 		List<User> list = this.userService.getAllUsers();
+		System.out.println("list"+list);
 		return list;
 	}
 	//删除用户

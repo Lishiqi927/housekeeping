@@ -2,27 +2,71 @@ package com.wl.po;
 
 import java.io.Serializable;
 
-public class User implements Serializable{
-	private Integer id;
-	private String username;
-	private String address;
-	public Integer getId() {
-		return id;
+public class User{
+	private String USERID;
+	private String USERNAME;
+	private String USERPASSWORD;
+	private String USERPHONE;
+	private int USERTYPE;
+	private int USERAGE;
+	private int USERSTATUS;
+	private String REMAKE;
+	public String getUSERID() {
+		return USERID;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setUSERID(String uSERID) {
+		USERID = uSERID;
 	}
-	public String getUsername() {
-		return username;
+	public String getUSERNAME() {
+		return USERNAME;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUSERNAME(String uSERNAME) {
+		USERNAME = uSERNAME;
 	}
-	public String getAddress() {
-		return address;
+	public String getUSERPASSWORD() {
+		return USERPASSWORD;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setUSERPASSWORD(String uSERPASSWORD) {
+		USERPASSWORD = uSERPASSWORD;
 	}
+	public String getUSERPHONE() {
+		return USERPHONE;
+	}
+	public void setUSERPHONE(String uSERPHONE) {
+		USERPHONE = uSERPHONE;
+	}
+	public int getUSERTYPE() {
+		return USERTYPE;
+	}
+	public void setUSERTYPE(int uSERTYPE) {
+		USERTYPE = uSERTYPE;
+	}
+	public int getUSERAGE() {
+		return USERAGE;
+	}
+	public void setUSERAGE(int uSERAGE) {
+		USERAGE = uSERAGE;
+	}
+	public int getUSERSTATUS() {
+		return USERSTATUS;
+	}
+	public void setUSERSTATUS(int uSERSTATUS) {
+		USERSTATUS = uSERSTATUS;
+	}
+	public String getREMAKE() {
+		return REMAKE;
+	}
+	public void setREMAKE(String rEMAKE) {
+		REMAKE = rEMAKE;
+	}
+	@Override
+	public String toString() {
+		return "User [USERID=" + USERID + ", USERNAME=" + USERNAME + ", USERPASSWORD=" + USERPASSWORD + ", USERPHONE="
+				+ USERPHONE + ", USERTYPE=" + USERTYPE + ", USERAGE=" + USERAGE + ", USERSTATUS=" + USERSTATUS
+				+ ", REMAKE=" + REMAKE + "]";
+	}
+	
+	
+	
 	
 }

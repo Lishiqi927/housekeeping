@@ -20,7 +20,6 @@ public class UserServiceImpl implements UserService{
 	@Autowired
 	private UserMapper userMapper;
 	//查询所有用户
-	@Cacheable(value="UserCaahe",key="'user.getAllUsers'")
 	public List<User> getAllUsers() {
 		
 		return this.userMapper.getAllUsers();
