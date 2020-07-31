@@ -32,4 +32,32 @@ public class UserServiceImpl implements UserService{
 		this.userMapper.deleteUser(id);
 	}
 
+	/**
+	 * 登录
+	 */
+	public User getUserLogin(User user) {
+		// TODO Auto-generated method stub
+		return userMapper.getUserLogin(user);
+	}
+
+	/**
+	 * 注册
+	 */
+	public int registerUser(User user) {
+		if(userMapper.getUserExist(user.getUSERNUMBER())==1){
+			return 0;
+		}
+		int i = userMapper.registerUser(user);
+		
+		return i;
+	}
+
+	/**
+	 * 判断用户账号是否存在
+	 */
+	public int getUserExist(String username) {
+		int user = userMapper.getUserExist(username);
+		return user;
+	}
+
 }

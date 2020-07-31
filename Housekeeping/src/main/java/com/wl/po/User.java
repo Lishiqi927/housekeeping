@@ -1,11 +1,11 @@
 package com.wl.po;
 
-import java.io.Serializable;
 
 public class User{
 	private String USERID;
-	private String USERNAME;
+	private String USERNUMBER;
 	private String USERPASSWORD;
+	private String USERNAME;
 	private String USERPHONE;
 	private int USERTYPE;
 	private int USERAGE;
@@ -16,6 +16,13 @@ public class User{
 	}
 	public void setUSERID(String uSERID) {
 		USERID = uSERID;
+	}
+	
+	public String getUSERNUMBER() {
+		return USERNUMBER;
+	}
+	public void setUSERNUMBER(String uSERNUMBER) {
+		USERNUMBER = uSERNUMBER;
 	}
 	public String getUSERNAME() {
 		return USERNAME;
