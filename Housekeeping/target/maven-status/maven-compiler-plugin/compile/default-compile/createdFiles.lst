@@ -1,6 +1,5 @@
 com\wl\service\impl\UserServiceImpl.class
 com\wl\po\Orders.class
-com\wl\po\Demands.class
 com\wl\HelloApplication.class
 com\wl\service\UserService.class
 com\wl\po\Dictory.class
